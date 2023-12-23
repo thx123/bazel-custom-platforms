@@ -1,0 +1,9 @@
+module(name = "bazel-custom-platforms", version = "0.1.0")
+
+# 3rd party module dependencies in Bazel Central Registry: https://registry.bazel.build/
+# Background: https://bazel.build/external/migration
+bazel_dep(name = "rules_cc", version = "0.0.9")
+
+# For external dependencies built by CMake, etc.
+bazel_dep(name = "rules_foreign_cc", version = "0.10.1")
+
